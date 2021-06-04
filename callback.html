@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <div></div>
+
+    <script>
+    const news=[
+        {newstitle:"first title of the news",content:"news content goes here...."},
+        {newstitle:"second title of the news",content:"news content goes here"}
+
+    ]
+
+    function showNews(){
+        // setTimeout(function(){},1000}
+        setTimeout(() => {
+            let result=""
+            news.forEach((post)=>{
+                result+=`<li>${post.newstitle}</li>`
+            })
+            document.querySelector('div').innerHTML=result
+            
+        },2000)
+        }
+
+    // function addNews(newdata) {
+    //     setTimeout(() => {
+    //         news.push(newdata)
+    //     }, 3000);
+    // }
+
+
+    function addNews(newdata,callback) {
+        setTimeout(() => {
+            news.push(newdata)
+            //call the callback function after adding new news
+            callback()
+        }, 3000);
+    }
+
+
+    showNews()
+//addNews({newstitle:"third title",content:"content goes here"})
+    addNews({newstitle:"third title",content:"content goes here"},showNews)
+     
+
+
+    </script>
+</body>
+</html>

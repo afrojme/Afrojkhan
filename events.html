@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+
+  <!-- <button onclick="demo()">click</button> -->
+  <button onmouseover="demo()" onmouseout="mydemo()">hover over button to see the result</button>
+  <h3 id="result"></h3>
+    
+  <script>
+// events are the things that happened to html elements it can be done by browser or user
+//types of events
+//onclick-->when user click the html elements
+//onchange-->when input field is change
+//onsubmit->when form is submited
+//onload-->when is browser is loaded
+//ondblclick-->when double click in html
+//onmouseover--when mouse hover on element
+//onmouseout-->when mouse hover out from html elements
+//onkeyup-->when a key is press
+//onmousemove-->when a mouse move over an element
+
+function demo(){
+   // document.write(new Date()) 
+   //click after date one page to another merge
+   document.getElementById('result').innerHTML=new Date()
+    //click and date both  show in one page
+}
+function mydemo(){
+    document.getElementById('result').innerHTML=null()
+}
+
+  </script>
+
+</body>
+</html>

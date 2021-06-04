@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+<body>
+    <script>
+    //if
+    //if ..else
+    //if else if else
+    //switch
+
+    const x=20
+    if(x>15){
+        document.write('x is greater then 15')
+    }
+
+    document.write('<br>')
+    //if else
+    const y=13
+    if(y%2==0){
+        document.write('even number')
+    }
+    else{
+        document.write('odd number') 
+    }
+//leap year
+    const year=2021
+    if(year%4==0&& year%100!=0 ||year%400==0){
+        document.write('leap year')   
+    }
+    else{
+        document.write('not a leap year')
+    }
+    //else if 
+    let time=new Date() .getHours()
+    if(time>4){
+        document.write('good morning')
+}
+else if(time>11){
+    document.write('good afternoon')  
+}
+ else if(time>16 && time<20){
+document.write('good evening')
+ }
+ else{
+     document.write('good')
+ }
+
+
+
+
+
+    </script>
+</body>
+</html>

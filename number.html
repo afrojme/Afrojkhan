@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const x=25.78996
+document.write(x.toPrecision(2)+'<br>')
+document.write(x.toPrecision(4)+'<br>')
+
+//to fixed-->how many  number after decimal point
+document.write(x.toFixed(2)+'<br>')
+document.write(x.toFixed(1)+'<br>')
+
+
+
+       //to convert string to number
+        //Number(),parseInt(),paraselast
+        const y="45"
+        document.write(typeof(y));
+        document.write('<br>')
+        const z=Number(y)
+        document.write(typeof(z));
+        document.write('<br>')
+        const a=Number("hello")
+        document.write(a)
+        document.write('<br>')
+        const b=parseInt("45,67")
+        //parseInt alwaya give result of whole number
+        document.write(b)
+
+    </script>
+</body>
+</html>
